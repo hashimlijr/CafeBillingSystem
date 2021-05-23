@@ -31,6 +31,8 @@ namespace CafeBillingSystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CBS));
             this.pnl_Border = new System.Windows.Forms.Panel();
+            this.pb_Minimize = new System.Windows.Forms.PictureBox();
+            this.pb_Close = new System.Windows.Forms.PictureBox();
             this.checkBox_Latte = new System.Windows.Forms.CheckBox();
             this.checkBox_Cappuccino = new System.Windows.Forms.CheckBox();
             this.checkBox_Americano = new System.Windows.Forms.CheckBox();
@@ -70,15 +72,13 @@ namespace CafeBillingSystem
             this.pb_B = new System.Windows.Forms.PictureBox();
             this.pb_C = new System.Windows.Forms.PictureBox();
             this.pb_System = new System.Windows.Forms.PictureBox();
-            this.pb_Minimize = new System.Windows.Forms.PictureBox();
-            this.pb_Close = new System.Windows.Forms.PictureBox();
             this.pnl_Border.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Minimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_ToLoginPage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_B)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_C)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_System)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Minimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Close)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Border
@@ -92,6 +92,33 @@ namespace CafeBillingSystem
             this.pnl_Border.Size = new System.Drawing.Size(910, 32);
             this.pnl_Border.TabIndex = 0;
             this.pnl_Border.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_Border_MouseDown);
+            // 
+            // pb_Minimize
+            // 
+            this.pb_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_Minimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pb_Minimize.Image = global::CafeBillingSystem.Properties.Resources.minus_4_;
+            this.pb_Minimize.Location = new System.Drawing.Point(850, 0);
+            this.pb_Minimize.Name = "pb_Minimize";
+            this.pb_Minimize.Size = new System.Drawing.Size(30, 32);
+            this.pb_Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb_Minimize.TabIndex = 1;
+            this.pb_Minimize.TabStop = false;
+            this.pb_Minimize.Click += new System.EventHandler(this.pb_Minimize_Click);
+            // 
+            // pb_Close
+            // 
+            this.pb_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pb_Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb_Close.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pb_Close.Image = global::CafeBillingSystem.Properties.Resources.cancel_5_;
+            this.pb_Close.Location = new System.Drawing.Point(880, 0);
+            this.pb_Close.Name = "pb_Close";
+            this.pb_Close.Size = new System.Drawing.Size(30, 32);
+            this.pb_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb_Close.TabIndex = 0;
+            this.pb_Close.TabStop = false;
+            this.pb_Close.Click += new System.EventHandler(this.pb_Close_Click);
             // 
             // checkBox_Latte
             // 
@@ -222,7 +249,7 @@ namespace CafeBillingSystem
             // textBox__CheeseCake
             // 
             this.textBox__CheeseCake.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox__CheeseCake.Location = new System.Drawing.Point(673, 402);
+            this.textBox__CheeseCake.Location = new System.Drawing.Point(683, 402);
             this.textBox__CheeseCake.Name = "textBox__CheeseCake";
             this.textBox__CheeseCake.Size = new System.Drawing.Size(100, 27);
             this.textBox__CheeseCake.TabIndex = 34;
@@ -231,7 +258,7 @@ namespace CafeBillingSystem
             // textBox__AngelFoodCake
             // 
             this.textBox__AngelFoodCake.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox__AngelFoodCake.Location = new System.Drawing.Point(673, 369);
+            this.textBox__AngelFoodCake.Location = new System.Drawing.Point(683, 369);
             this.textBox__AngelFoodCake.Name = "textBox__AngelFoodCake";
             this.textBox__AngelFoodCake.Size = new System.Drawing.Size(100, 27);
             this.textBox__AngelFoodCake.TabIndex = 33;
@@ -240,7 +267,7 @@ namespace CafeBillingSystem
             // textBox__GenoiseCake
             // 
             this.textBox__GenoiseCake.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox__GenoiseCake.Location = new System.Drawing.Point(673, 336);
+            this.textBox__GenoiseCake.Location = new System.Drawing.Point(683, 336);
             this.textBox__GenoiseCake.Name = "textBox__GenoiseCake";
             this.textBox__GenoiseCake.Size = new System.Drawing.Size(100, 27);
             this.textBox__GenoiseCake.TabIndex = 32;
@@ -249,7 +276,7 @@ namespace CafeBillingSystem
             // textBox__SpongeCake
             // 
             this.textBox__SpongeCake.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox__SpongeCake.Location = new System.Drawing.Point(673, 303);
+            this.textBox__SpongeCake.Location = new System.Drawing.Point(683, 303);
             this.textBox__SpongeCake.Name = "textBox__SpongeCake";
             this.textBox__SpongeCake.Size = new System.Drawing.Size(100, 27);
             this.textBox__SpongeCake.TabIndex = 31;
@@ -258,7 +285,7 @@ namespace CafeBillingSystem
             // textBox_PoundCake
             // 
             this.textBox_PoundCake.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_PoundCake.Location = new System.Drawing.Point(673, 270);
+            this.textBox_PoundCake.Location = new System.Drawing.Point(683, 270);
             this.textBox_PoundCake.Name = "textBox_PoundCake";
             this.textBox_PoundCake.Size = new System.Drawing.Size(100, 27);
             this.textBox_PoundCake.TabIndex = 30;
@@ -267,7 +294,7 @@ namespace CafeBillingSystem
             // textBox_ButterCake
             // 
             this.textBox_ButterCake.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_ButterCake.Location = new System.Drawing.Point(673, 234);
+            this.textBox_ButterCake.Location = new System.Drawing.Point(683, 234);
             this.textBox_ButterCake.Name = "textBox_ButterCake";
             this.textBox_ButterCake.Size = new System.Drawing.Size(100, 27);
             this.textBox_ButterCake.TabIndex = 29;
@@ -539,33 +566,6 @@ namespace CafeBillingSystem
             this.pb_System.TabIndex = 10;
             this.pb_System.TabStop = false;
             // 
-            // pb_Minimize
-            // 
-            this.pb_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pb_Minimize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pb_Minimize.Image = global::CafeBillingSystem.Properties.Resources.minus_4_;
-            this.pb_Minimize.Location = new System.Drawing.Point(850, 0);
-            this.pb_Minimize.Name = "pb_Minimize";
-            this.pb_Minimize.Size = new System.Drawing.Size(30, 32);
-            this.pb_Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pb_Minimize.TabIndex = 1;
-            this.pb_Minimize.TabStop = false;
-            this.pb_Minimize.Click += new System.EventHandler(this.pb_Minimize_Click);
-            // 
-            // pb_Close
-            // 
-            this.pb_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pb_Close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pb_Close.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pb_Close.Image = global::CafeBillingSystem.Properties.Resources.cancel_5_;
-            this.pb_Close.Location = new System.Drawing.Point(880, 0);
-            this.pb_Close.Name = "pb_Close";
-            this.pb_Close.Size = new System.Drawing.Size(30, 32);
-            this.pb_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pb_Close.TabIndex = 0;
-            this.pb_Close.TabStop = false;
-            this.pb_Close.Click += new System.EventHandler(this.pb_Close_Click);
-            // 
             // CBS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -619,12 +619,12 @@ namespace CafeBillingSystem
             this.Text = "Cafe Billing System";
             this.Load += new System.EventHandler(this.CBS_Load);
             this.pnl_Border.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Minimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_ToLoginPage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_B)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_System)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Minimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

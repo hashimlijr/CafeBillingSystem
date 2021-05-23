@@ -81,23 +81,34 @@ namespace CafeBillingSystem
 
         private void button_Receipt_Click(object sender, EventArgs e)
         {
-            string windr = Path.GetDirectoryName(Application.ExecutablePath);
-            string client = "receipt_" + placeholderTextBox_ClientName.Text + ".txt";
-            string path = windr + @"\database" + @"\" + label_CafeName.Text + @"\" + client;
-            StreamWriter receipt = new StreamWriter(path);
-            if(lblTotal.Text != "0")
+            //string windr = Path.GetDirectoryName(Application.ExecutablePath);
+            // client = "receipt_" + placeholderTextBox_ClientName.Text + ".txt";
+            //string path = windr + @"\database" + @"\" + label_CafeName.Text + @"\" + client;
+            //StreamWriter receipt = new StreamWriter(path);
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "receipt(*.txt)|*.txt";
+            if (sfd.ShowDialog() == DialogResult.OK)
             {
-                string receiptDetail = GetDetail();
-                receipt.Write(receiptDetail);
-                receipt.Close();
-                MessageBox.Show("Receipt saved succesfully.");
+                if(lblSubTotal.Text != "0")
+                {
+                    string receiptDetail = GetDetail();
+                    StreamWriter sw = new StreamWriter(sfd.FileName);
+                    sw.Write(receiptDetail);
+                    sw.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Please be sure that you fill areas right or try click \"Total\" button first.");
+                }
             }
-            else
-            {
-                MessageBox.Show("Please be sure that you fill areas right or try click \"Total\" button first.");
-            }
-            
-            
+            //if (lblTotal.Text != "0")
+            //{
+            //    string receiptDetail = GetDetail();
+            //    receipt.Write(receiptDetail);
+            //    receipt.Close();
+            //    MessageBox.Show("Receipt saved succesfully.");
+            //}
+                    
         }
 
         public string GetDetail()
