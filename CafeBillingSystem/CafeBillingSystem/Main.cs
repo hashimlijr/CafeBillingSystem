@@ -87,19 +87,19 @@ namespace CafeBillingSystem
             //StreamWriter receipt = new StreamWriter(path);
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Filter = "receipt(*.txt)|*.txt";
-            if (sfd.ShowDialog() == DialogResult.OK)
+            if (lblSubTotal.Text != "0$")
             {
-                if(lblSubTotal.Text != "0")
+                if(sfd.ShowDialog() == DialogResult.OK)
                 {
                     string receiptDetail = GetDetail();
                     StreamWriter sw = new StreamWriter(sfd.FileName);
                     sw.Write(receiptDetail);
                     sw.Close();
                 }
-                else
-                {
-                    MessageBox.Show("Please be sure that you fill areas right or try click \"Total\" button first.");
-                }
+            }
+            else
+            {
+                MessageBox.Show("Please be sure that you fill areas right or try click \"Total\" button first.");
             }
             //if (lblTotal.Text != "0")
             //{
@@ -108,7 +108,7 @@ namespace CafeBillingSystem
             //    receipt.Close();
             //    MessageBox.Show("Receipt saved succesfully.");
             //}
-                    
+
         }
 
         public string GetDetail()
