@@ -1,0 +1,15 @@
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\bin\Debug\CafeBillingSystem.exe.config
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\bin\Debug\CafeBillingSystem.exe
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\bin\Debug\CafeBillingSystem.pdb
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.csprojAssemblyReference.cache
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.CBS.resources
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.Properties.Resources.resources
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.csproj.GenerateResource.cache
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.csproj.CoreCompileInputs.cache
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.exe
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.pdb
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.Registration.resources
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\bin\Debug\PlaceholderTextBox.dll
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.csproj.CopyComplete
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.Login.resources
+C:\Users\Elgun Hashimli\source\repos\CafeBillingSystem\CafeBillingSystem\obj\Debug\CafeBillingSystem.Client.resources
